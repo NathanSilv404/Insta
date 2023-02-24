@@ -1,0 +1,151 @@
+.imagehomepage {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  margin: 2rem;
+}
+
+#body-el {
+  display: flex;
+  justify-content: center;
+ 
+  }
+
+  body {
+    background-color: #343a40;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  label{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin:10px 0px;
+  }
+  input{
+    padding:10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    border: none;
+    background-color: #6c757d;
+    border-bottom-right-radius:10px;
+    font-size:19.2px;
+    
+    color:#f8f9fa;
+  }
+  input:focus{
+    outline: none;
+    background-color: none;
+  }
+  input::placeholder{
+    color:#f8f9fa;
+    font-size: 19.2px;
+  
+  }
+
+  button{
+    width:fit-content;
+    margin:20px auto;
+    padding:10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    color:white;
+    background-color: #248277;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition-duration: 0.25s;
+  }
+  button:hover{
+    background-color: #036666;
+  }
+  span{
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  a{
+    text-decoration: none;
+    color:#99e2b4;
+  }
+  span>span>a{
+    margin:0px 5px
+  }
+  a:hover{
+    color: #06d6a0;
+  }
+
+#comm {
+  display: block; 
+  
+}
+
+ .comment {
+   border: 1px solid lightgrey;
+    
+    margin: 0.5rem;
+    
+  }
+.publication { 
+  padding: 5rem;
+
+}
+
+.commentauthor {
+  font-size: 1.2rem;
+  
+  
+
+}
+
+
+
+  @media  (max-width: 480px) {
+    .imagehomepage {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      margin: 2rem;
+    }
+  }
+
+
+
+
+
+.button-like {
+  background-image: url("./images/pouce_vert.jpg");
+  background-size: cover;
+  width : 4rem;
+  height: 4rem;
+  color: black;
+}
+
+.button-dislike {
+  background-image: url("./images/pouce_rouge.jpg");
+  background-size: cover;
+  width : 4rem;
+  height: 4rem;
+  color: black;
+}
+
+.dislike-size {
+  font-size: 20px;
+}
+
+.like-size {
+  font-size: 20px;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.disabled {
+  opacity: 0.5; /* rendre le bouton semi-transparent /
+  pointer-events: none; / désactiver les événements de souris sur le bouton */
+}
