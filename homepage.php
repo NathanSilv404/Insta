@@ -57,6 +57,12 @@ if ($query->rowCount() > 0) {
 
       
 
+        <form method='post' action='formcomment.php' class='comment-form'>
+            <input type='hidden' name='image_id' value='<?php echo $row["id"]; ?>' />
+            <input type='text' name='pseudo' value='<?php echo $_SESSION["pseudo"]; ?>' required />
+            <textarea name='comment' rows='2' cols='35' placeholder='Votre commentaire' required></textarea>
+            <input type='submit' value='Envoyer' name='submit_comment' />
+        </form>
         
         <?php
         // Récupérer les commentaires pour cette image depuis la base de données
